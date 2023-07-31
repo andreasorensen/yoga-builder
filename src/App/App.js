@@ -19,7 +19,8 @@ const App = () => {
       }
       const data = await response.json();
       setPosesData(data);
-      setError(null); // Clear any previous errors if the fetch is successful
+      console.log(data)
+      setError(null);
     } catch (error) {
       console.error('Error fetching data:', error);
       setError('Error fetching data. Please try again later.'); // Set an error message to display to the user
@@ -44,8 +45,8 @@ const App = () => {
         <div>
           <h2>Yoga Poses for {selectedLevel} level:</h2>
           <ul>
-            {posesData.map((pose) => (
-              <li key={pose.id}>{pose.name}</li>
+            {posesData.poses.map((pose) => (
+              <li key={pose.id}>{pose.english_name}</li>
             ))}
           </ul>
         </div>
