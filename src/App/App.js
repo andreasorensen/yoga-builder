@@ -1,31 +1,31 @@
-import './App.css'
-import { Route, Routes } from "react-router-dom";
-import React, { useState } from 'react';
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import FilterForm from '../FilterForm/FilterForm';
+import { getPoses } from '../apiCalls';
 
 const App = () => {
   const [selectedLevel, setSelectedLevel] = useState('beginner');
   const [posesData, setPosesData] = useState(null);
   const [error, setError] = useState(null);
 
-  const handleLevelChange = (event) => {
-    setSelectedLevel(event.target.value);
-  };
-
-  const fetchData = async () => {
+  const fetchData = async (level) => {
     try {
-      const response = await fetch(`https://yoga-api-nzy4.onrender.com/v1/poses?level=${selectedLevel}`);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
+      const data = await getPoses(level);
       setPosesData(data);
-      console.log(data)
       setError(null);
     } catch (error) {
       console.error('Error fetching data:', error);
       setError('Error fetching data. Please try again later.');
     }
+  };
+
+  useEffect(() => {
+    fetchData(selectedLevel);
+  }, [selectedLevel]);
+
+  const handleLevelChange = (event) => {
+    setSelectedLevel(event.target.value);
   };
 
   return (
@@ -34,7 +34,6 @@ const App = () => {
       <FilterForm
         selectedLevel={selectedLevel}
         handleLevelChange={handleLevelChange}
-        fetchData={fetchData}
       />
       {error && <p>{error}</p>}
       {posesData && (
