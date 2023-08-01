@@ -1,14 +1,23 @@
 // this should have the Form component rendered as well as the Asana cards
 
 import FilterForm from "../FilterForm/FilterForm";
+import AsanaCard from "../AsanaCard/AsanaCard";
 
-const Homepage = ({selectedLevel, handleLevelChange}) => {
+const Homepage = ({selectedLevel, handleLevelChange, posesData}) => {
+
+  const renderAsanaCard = () => {
+    return posesData.poses.map((pose) => (
+      <AsanaCard key={pose.id} pose={pose} />
+    ));
+  };
+
   return (
     <>
       <FilterForm
         selectedLevel={selectedLevel}
         handleLevelChange={handleLevelChange}
       />
+      <div className="asana-card-container">{renderAsanaCard()}</div>
     </>
   );
 };

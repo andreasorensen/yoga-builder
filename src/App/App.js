@@ -32,18 +32,15 @@ const App = () => {
     <div>
       <h1>Yogability</h1>
       {error && <p>{error}</p>}
-      <Homepage
-        selectedLevel={selectedLevel}
-        handleLevelChange={handleLevelChange}
-      />
+
       {posesData && (
         <div>
           <h2>Yoga Poses for {selectedLevel} level:</h2>
-          <ul>
-            {posesData.poses.map((pose) => (
-              <li key={pose.id}>{pose.english_name}</li>
-            ))}
-          </ul>
+          <Homepage
+        selectedLevel={selectedLevel}
+        handleLevelChange={handleLevelChange}
+        posesData={posesData}
+      />
         </div>
       )}
     </div>
