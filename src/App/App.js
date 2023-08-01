@@ -35,7 +35,6 @@ const App = () => {
 
       {posesData && (
         <div>
-          <h2>Yoga Poses for {selectedLevel} level:</h2>
           <Homepage
         selectedLevel={selectedLevel}
         handleLevelChange={handleLevelChange}

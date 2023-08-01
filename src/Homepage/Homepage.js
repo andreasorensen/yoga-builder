@@ -17,6 +17,7 @@ const Homepage = ({selectedLevel, handleLevelChange, posesData}) => {
         selectedLevel={selectedLevel}
         handleLevelChange={handleLevelChange}
       />
+      <h2>Yoga Poses for {selectedLevel} level:</h2>
       <div className="asana-card-container">{renderAsanaCard()}</div>
     </>
   );
