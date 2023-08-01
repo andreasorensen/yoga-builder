@@ -1,6 +1,7 @@
 import './App.css'
 import { Route, Routes } from "react-router-dom";
 import React, { useState } from 'react';
+import FilterForm from '../FilterForm/FilterForm';
 
 const App = () => {
   const [selectedLevel, setSelectedLevel] = useState('beginner');
@@ -23,23 +24,18 @@ const App = () => {
       setError(null);
     } catch (error) {
       console.error('Error fetching data:', error);
-      setError('Error fetching data. Please try again later.'); // Set an error message to display to the user
+      setError('Error fetching data. Please try again later.');
     }
   };
 
   return (
     <div>
-      <h1>Yoga Poses App</h1>
-      <label>
-        Select Level:
-        <select value={selectedLevel} onChange={handleLevelChange}>
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-        </select>
-      </label>
-      <button onClick={fetchData}>Fetch Data</button>
-
+      <h1>Yogability</h1>
+      <FilterForm
+        selectedLevel={selectedLevel}
+        handleLevelChange={handleLevelChange}
+        fetchData={fetchData}
+      />
       {error && <p>{error}</p>}
       {posesData && (
         <div>
