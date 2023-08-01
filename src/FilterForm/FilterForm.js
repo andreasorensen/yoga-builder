@@ -1,7 +1,5 @@
 
-
-
-const FilterForm = ({selectedLevel, handleLevelChange, fetchData}) => {
+const FilterForm = ({selectedLevel, handleLevelChange, getPoses}) => {
   return (
     <>
       <label>
@@ -12,7 +10,7 @@ const FilterForm = ({selectedLevel, handleLevelChange, fetchData}) => {
           <option value="expert">Expert</option>
         </select>
       </label>
-      <button onClick={fetchData}>Submit</button>
+      <button onClick={getPoses}>Submit</button>
     </>
   )
 }
