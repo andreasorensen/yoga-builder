@@ -1,5 +1,4 @@
-
-const FilterForm = ({selectedLevel, handleLevelChange, getPoses}) => {
+const FilterForm = ({ selectedLevel, handleLevelChange, getPoses }) => {
   return (
     <>
       <label>
@@ -12,7 +11,7 @@ const FilterForm = ({selectedLevel, handleLevelChange, getPoses}) => {
       </label>
       <button onClick={getPoses}>Submit</button>
     </>
-  )
-}
+  );
+};
 
-export default FilterForm
+export default FilterForm;

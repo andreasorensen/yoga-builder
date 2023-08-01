@@ -1,11 +1,11 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
-import FilterForm from '../FilterForm/FilterForm';
-import { getPoses } from '../apiCalls';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import Homepage from "../Homepage/Homepage";
+import { getPoses } from "../apiCalls";
 
 const App = () => {
-  const [selectedLevel, setSelectedLevel] = useState('beginner');
+  const [selectedLevel, setSelectedLevel] = useState("beginner");
   const [posesData, setPosesData] = useState(null);
   const [error, setError] = useState(null);
 
@@ -31,11 +31,11 @@ const App = () => {
   return (
     <div>
       <h1>Yogability</h1>
-      <FilterForm
+      {error && <p>{error}</p>}
+      <Homepage
         selectedLevel={selectedLevel}
         handleLevelChange={handleLevelChange}
       />
-      {error && <p>{error}</p>}
       {posesData && (
         <div>
           <h2>Yoga Poses for {selectedLevel} level:</h2>
