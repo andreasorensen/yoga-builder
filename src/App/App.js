@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Homepage from "../Homepage/Homepage";
 import { getPoses } from "../apiCalls";
+import NavBar from "../NavBar/NavBar";
 
 const App = () => {
   const [selectedLevel, setSelectedLevel] = useState("beginner");
@@ -29,8 +30,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Yogability</h1>
+    <>
+      <NavBar />
       {error && <p>{error}</p>}
 
       {posesData && (
@@ -42,7 +43,7 @@ const App = () => {
       />
         </div>
       )}
-    </div>
+    </>
   );
 };
 
