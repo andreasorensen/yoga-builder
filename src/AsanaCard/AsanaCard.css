@@ -6,7 +6,7 @@
   box-sizing: border-box;
   box-shadow: 5px 5px 5px 5px #eb8eae;
   background-color: white;
-  
+  position: relative;
 }
 
 .asana-image {
@@ -24,3 +24,18 @@
   text-align: center;
   color: eb8eae;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-content {
+  text-align: center;
+}
+/* 
+.FavButton {
+  position: absolute;
+  right: 50;
+} */
