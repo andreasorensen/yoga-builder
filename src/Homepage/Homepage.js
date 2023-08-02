@@ -9,6 +9,7 @@ const Homepage = ({
   posesData,
   setShowAsanaCards,
   showAsanaCards,
+  isLoading
 }) => {
   
   const handleSubmit = (event) => {
@@ -29,7 +30,7 @@ const Homepage = ({
         handleLevelChange={handleLevelChange}
         onSubmit={handleSubmit}
       />
-      {showAsanaCards && (
+      {isLoading ? <p>Loading...</p> :showAsanaCards && (
         <>
           <h2 className="asana-level-msg">Here are some {selectedLevel} level asanas:</h2>
           <div className="asana-card-container">{renderAsanaCard()}</div>

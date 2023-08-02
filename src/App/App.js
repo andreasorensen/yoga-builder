@@ -10,8 +10,10 @@ const App = () => {
   const [posesData, setPosesData] = useState(null);
   const [error, setError] = useState(null);
   const [showAsanaCards, setShowAsanaCards] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchData = async (level) => {
+    setIsLoading(true);
     setShowAsanaCards(false);
     try {
       const data = await getPoses(level);
@@ -21,6 +23,7 @@ const App = () => {
       console.error("Error fetching data:", error);
       setError("Error fetching data. Please try again later.");
     }
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -42,6 +45,7 @@ const App = () => {
           posesData={posesData}
           setShowAsanaCards={setShowAsanaCards}
           showAsanaCards={showAsanaCards}
+          isLoading={isLoading}
         />
       </div>
     </>

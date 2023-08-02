@@ -15,13 +15,24 @@
 .asana-image {
   width: 100px; 
   height: 100px;
-  object-fit: cover;
 }
 
 .name,
 .sanskrit-name,
 .description,
 .benefits {
-  margin: 5px 0;
   text-align: center;
 }
+
+.name {
+  margin: 1px 0 0 0;
+}
+
+.sanskrit-name, .description, .asana-image {
+  margin: -35px 0 0 0;
+}
+
+.benefits {
+  margin: -25px 0 0 0;
+}
+
