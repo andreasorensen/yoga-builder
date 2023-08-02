@@ -1,9 +1,11 @@
 .asana-card {
-  width: 500px;
+  width: 400px;
   border: 1px solid #000;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   box-sizing: border-box;
+  box-shadow: 5px 5px 5px 5px #eb8eae;
+  background-color: white;
   
 }
 
@@ -20,4 +22,5 @@
 .description,
 .benefits {
   text-align: center;
+  color: eb8eae;
 }
