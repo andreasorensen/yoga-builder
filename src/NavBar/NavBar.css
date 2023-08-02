@@ -3,11 +3,14 @@
   align-items: center;
   justify-content: space-between;
   background-color: black;
+  margin-bottom: 50px;
 }
 
 .logo {
   height: 180px;
   margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .homepage-btn,

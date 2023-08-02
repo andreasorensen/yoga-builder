@@ -1,5 +1,5 @@
 // this should have the Form component rendered as well as the Asana cards
-
+import './Homepage.css'
 import FilterForm from "../FilterForm/FilterForm";
 import AsanaCard from "../AsanaCard/AsanaCard";
 
@@ -9,6 +9,7 @@ const Homepage = ({
   posesData,
   setShowAsanaCards,
   showAsanaCards,
+  isLoading
 }) => {
   
   const handleSubmit = (event) => {
@@ -29,9 +30,9 @@ const Homepage = ({
         handleLevelChange={handleLevelChange}
         onSubmit={handleSubmit}
       />
-      {showAsanaCards && (
+      {isLoading ? <p>Loading...</p> :showAsanaCards && (
         <>
-          <h2>Yoga Poses for {selectedLevel} level:</h2>
+          <h2 className="asana-level-msg">Here are some {selectedLevel} level asanas:</h2>
           <div className="asana-card-container">{renderAsanaCard()}</div>
         </>
       )}
