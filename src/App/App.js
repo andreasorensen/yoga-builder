@@ -13,6 +13,7 @@ const App = () => {
   const [error, setError] = useState(null);
   const [showAsanaCards, setShowAsanaCards] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [favoritedPoses, setFavoritedPoses] = useState([]);
 
   const fetchData = async (level) => {
     setIsLoading(true);
@@ -36,6 +37,14 @@ const App = () => {
     setSelectedLevel(event.target.value);
   };
 
+  const handleToggleFavorite = (pose) => {
+    if (favoritedPoses.includes(pose)) {
+      setFavoritedPoses(favoritedPoses.filter(favoritePose => favoritePose !== pose));
+    } else {
+      setFavoritedPoses([...favoritedPoses, pose]);
+    }
+  };
+
   return (
     <>
       <NavBar />
@@ -53,6 +62,8 @@ const App = () => {
                 setShowAsanaCards={setShowAsanaCards}
                 showAsanaCards={showAsanaCards}
                 isLoading={isLoading}
+                handleToggleFavorite={handleToggleFavorite}
+                favoritedPoses={favoritedPoses}
               />
             }
           />
