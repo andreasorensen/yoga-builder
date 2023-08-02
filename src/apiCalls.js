@@ -14,4 +14,4 @@ const getPoses = async (selectedLevel) => {
 }
 
 
-export default { getPoses }
+export { getPoses }

@@ -1,6 +1,6 @@
-const FilterForm = ({ selectedLevel, handleLevelChange, getPoses }) => {
+const FilterForm = ({ selectedLevel, handleLevelChange, onSubmit }) => {
   return (
-    <>
+    <form onSubmit={onSubmit}>
       <label>
         Select Level:
         <select value={selectedLevel} onChange={handleLevelChange}>
@@ -9,8 +9,8 @@ const FilterForm = ({ selectedLevel, handleLevelChange, getPoses }) => {
           <option value="expert">Expert</option>
         </select>
       </label>
-      <button onClick={getPoses}>Submit</button>
-    </>
+      <button type="submit">Submit</button>
+    </form>
   );
 };
 
