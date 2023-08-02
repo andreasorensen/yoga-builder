@@ -9,7 +9,9 @@ const Homepage = ({
   posesData,
   setShowAsanaCards,
   showAsanaCards,
-  isLoading
+  isLoading,
+  handleToggleFavorite,
+  favoritedPoses
 }) => {
   
   const handleSubmit = (event) => {
@@ -19,7 +21,7 @@ const Homepage = ({
 
   const renderAsanaCard = () => {
     return posesData.poses.map((pose) => (
-      <AsanaCard key={pose.id} pose={pose} />
+      <AsanaCard key={pose.id} pose={pose} handleToggleFavorite={handleToggleFavorite} favoritedPoses={favoritedPoses}/>
     ));
   };
 
