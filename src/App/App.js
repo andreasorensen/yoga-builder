@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Homepage from "../Homepage/Homepage";
 import { getPoses } from "../apiCalls";
 import NavBar from "../NavBar/NavBar";
+import SavedPage from "../SavedPage/SavedPage"
+import NotFoundPage from "../NotFound/NotFoundPage";
 
 const App = () => {
   const [selectedLevel, setSelectedLevel] = useState("beginner");
@@ -37,19 +39,40 @@ const App = () => {
   return (
     <>
       <NavBar />
-      {error && <p>{error}</p>}
-      <div>
-        <Homepage
-          selectedLevel={selectedLevel}
-          handleLevelChange={handleLevelChange}
-          posesData={posesData}
-          setShowAsanaCards={setShowAsanaCards}
-          showAsanaCards={showAsanaCards}
-          isLoading={isLoading}
-        />
-      </div>
+      {error ? (
+        <p className="error-msg">{error}</p>
+      ) : (
+        <Routes>
+          <Route
+            path="/home"
+            element={
+              <Homepage
+                selectedLevel={selectedLevel}
+                handleLevelChange={handleLevelChange}
+                posesData={posesData}
+                setShowAsanaCards={setShowAsanaCards}
+                showAsanaCards={showAsanaCards}
+                isLoading={isLoading}
+              />
+            }
+          />
+          <Route path="/saved"
+          element={
+            <SavedPage />
+          }
+          />
+          <Route path="/*"
+          element={
+            <NotFoundPage />
+          }
+          />
+        </Routes>
+      )}
     </>
   );
 };
+
+
+// need to add error page route
 
 export default App;
