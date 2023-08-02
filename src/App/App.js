@@ -9,15 +9,17 @@ const App = () => {
   const [selectedLevel, setSelectedLevel] = useState("beginner");
   const [posesData, setPosesData] = useState(null);
   const [error, setError] = useState(null);
+  const [showAsanaCards, setShowAsanaCards] = useState(false);
 
   const fetchData = async (level) => {
+    setShowAsanaCards(false);
     try {
       const data = await getPoses(level);
       setPosesData(data);
       setError(null);
     } catch (error) {
-      console.error('Error fetching data:', error);
-      setError('Error fetching data. Please try again later.');
+      console.error("Error fetching data:", error);
+      setError("Error fetching data. Please try again later.");
     }
   };
 
@@ -33,16 +35,15 @@ const App = () => {
     <>
       <NavBar />
       {error && <p>{error}</p>}
-
-      {posesData && (
-        <div>
-          <Homepage
-        selectedLevel={selectedLevel}
-        handleLevelChange={handleLevelChange}
-        posesData={posesData}
-      />
-        </div>
-      )}
+      <div>
+        <Homepage
+          selectedLevel={selectedLevel}
+          handleLevelChange={handleLevelChange}
+          posesData={posesData}
+          setShowAsanaCards={setShowAsanaCards}
+          showAsanaCards={showAsanaCards}
+        />
+      </div>
     </>
   );
 };

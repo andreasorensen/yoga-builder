@@ -12,9 +12,18 @@
 
 .homepage-btn,
 .saved-asanas-btn {
-  padding: 8px;
+  padding: 8px 16px;
+  background-color: transparent;
   color: #eb8eae;
   text-decoration: none;
+}
+
+.homepage-btn {
+  margin-left: 100px;
+}
+
+.saved-asanas-btn {
+  margin-right: 100px;
 }
 
 /* .homepage-btn.active, 
