@@ -4,6 +4,7 @@
   justify-content: space-between;
   background-color: black;
   margin-bottom: 50px;
+  
 }
 
 .logo {
@@ -23,10 +24,12 @@
 
 .homepage-btn {
   margin-left: 100px;
+  border: 2px solid transparent;
 }
 
 .saved-asanas-btn {
   margin-right: 100px;
+  border: 2px solid transparent;
 }
 
 .nav-container .active {
