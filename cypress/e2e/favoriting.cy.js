@@ -7,7 +7,6 @@ describe('Favoriting functionality', () => {
     }).as('getBeginnerPoses');
 
     cy.visit('http://localhost:3000/')
-    cy.wait('@getBeginnerPoses')
 
     cy.get('.drop-down').select('Beginner');
     cy.get('.submit-btn').click();
@@ -32,7 +31,6 @@ describe('Favoriting functionality', () => {
     }).as('getBeginnerPoses');
 
     cy.visit('http://localhost:3000/')
-    cy.wait('@getBeginnerPoses')
     
     cy.get('.drop-down').select('Beginner');
     cy.get('.submit-btn').click();

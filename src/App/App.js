@@ -68,6 +68,7 @@ const App = () => {
                 isLoading={isLoading}
                 handleToggleFavorite={handleToggleFavorite}
                 favoritedPoses={favoritedPoses}
+                setSelectedLevel={setSelectedLevel}
               />
             }
           />

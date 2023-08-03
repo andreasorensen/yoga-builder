@@ -12,7 +12,7 @@ describe("FilterForm interactions", () => {
       fixture: "expert.json",
     }).as("getExpertPoses");
 
-    cy.get(".drop-down").should("have.value", null)
+    cy.get(".drop-down").should("have.value", '')
 
     cy.get(".drop-down").select("Intermediate").should("have.value", "intermediate");
 

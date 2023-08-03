@@ -11,7 +11,6 @@ const Homepage = ({
   posesData,
   setShowAsanaCards,
   showAsanaCards,
-  isLoading,
   handleToggleFavorite,
   favoritedPoses
 }) => {
