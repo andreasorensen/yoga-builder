@@ -1,10 +1,13 @@
-// AsanaCard.js
 
 import "./AsanaCard.css";
 import FavButton from "../FavButton/FavButton";
 
 const AsanaCard = ({ pose, handleToggleFavorite, favoritedPoses }) => {
-  const isFavorited = favoritedPoses.includes(pose.id);
+  console.log('favoritedPoses***:', favoritedPoses)
+  const isFavorited = favoritedPoses.some((favPose) => favPose.id === pose.id);
+
+  console.log('isFavorited', isFavorited)
+  console.log('pose:', pose)
 
   return (
     <div className="asana-card">
@@ -14,6 +17,9 @@ const AsanaCard = ({ pose, handleToggleFavorite, favoritedPoses }) => {
           <p className="sanskrit-name">{pose.sanskrit_name}</p>
         </div>
         <FavButton
+          key={pose.id}
+          pose={pose}
+          favoritedPoses={favoritedPoses}
           isFavorited={isFavorited}
           handleToggleFavorite={() => handleToggleFavorite(pose.id)}
         />
@@ -26,4 +32,3 @@ const AsanaCard = ({ pose, handleToggleFavorite, favoritedPoses }) => {
 };
 
 export default AsanaCard;
-

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Homepage from "../Homepage/Homepage";
 import { getPoses } from "../apiCalls";
 import NavBar from "../NavBar/NavBar";
-import SavedPage from "../SavedPage/SavedPage"
+import SavedPage from "../SavedPage/SavedPage";
 import NotFoundPage from "../NotFound/NotFoundPage";
 
 const App = () => {
@@ -37,13 +37,16 @@ const App = () => {
     setSelectedLevel(event.target.value);
   };
 
-  const handleToggleFavorite = (pose) => {
-    if (favoritedPoses.includes(pose)) {
-      setFavoritedPoses(favoritedPoses.filter(favoritePose => favoritePose !== pose));
+  const handleToggleFavorite = (poseId) => {
+    const pose = posesData.poses.find(pose => pose.id === poseId);
+  
+    if (favoritedPoses.find(favPose => favPose.id === poseId)) {
+      setFavoritedPoses(favoritedPoses.filter(favPose => favPose.id !== poseId));
     } else {
       setFavoritedPoses([...favoritedPoses, pose]);
     }
   };
+  
 
   return (
     <>
@@ -67,22 +70,21 @@ const App = () => {
               />
             }
           />
-          <Route path="/saved"
-          element={
-            <SavedPage />
-          }
+          <Route
+            path="/saved"
+            element={
+              <SavedPage
+                favoritedPoses={favoritedPoses}
+                handleToggleFavorite={handleToggleFavorite}
+              />
+            }
           />
-          <Route path="/*"
-          element={
-            <NotFoundPage />
-          }
-          />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       )}
     </>
   );
 };
-
 
 // need to add error page route
 
