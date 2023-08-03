@@ -29,10 +29,9 @@
   margin-right: 100px;
 }
 
-/* .homepage-btn.active, 
-.saved-asanas-btn.active {
-  text-decoration: underline;
-} */
+.nav-container .active {
+  border: 2px solid #eb8eae;
+}
 
 .homepage-btn:hover,
 .saved-asanas-btn:hover {
