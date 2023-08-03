@@ -40,32 +40,6 @@
           "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/7_a6aspg.svg",
           "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/7_a6aspg.png",
           "url_svg_alt": "https://www.dropbox.com/s/cginnz98of2jpgr/cat.svg?raw=1"
-      },
-      {
-          "id": 4,
-          "difficulty_level": "Beginner",
-          "english_name": "Cow",
-          "sanskrit_name_adapted": "Bitilasana",
-          "sanskrit_name": "Bitilāsana",
-          "translation_name": "bitil = cow, āsana = posture",
-          "pose_description": "From  box neutral the ribcage is lifted with a gentle sway in the low back.  The tailbone lifts up into dog tilt.  The eyes are soft and the gaze is to the sky.",
-          "pose_benefits": "Removes fatigue.  Improves breathing and the circulation of blood to the brain.  Rejuvenates the entire body.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483077/yoga-api/8_wi10sn.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483077/yoga-api/8_wi10sn.png",
-          "url_svg_alt": "https://www.dropbox.com/s/neau4ceai1rskh6/cow.svg?raw=1"
-      },
-      {
-          "id": 5,
-          "difficulty_level": "Beginner",
-          "english_name": "Chair",
-          "sanskrit_name_adapted": "Utkatasana",
-          "sanskrit_name": "Utkaṭāsana",
-          "translation_name": "utkaṭa = fierce, āsana = posture",
-          "pose_description": "From a standing position, the feet are together and rooted into the earth with toes actively lifted.  The knees are bent and the weight of the body is on the heels of the feet.  The pelvis is tucked in and the ribcage is lifted.  The neck is a natural extension of the spine.  The arms are lifted up toward the sky with the elbows straight and the biceps by the ears.  The hands can be together or separated and facing each other with the fingers spread wide.  The gaze is forward.",
-          "pose_benefits": "Strengthens the ankles, thighs, calves, and spine.  Stretches shoulders and chest.  Stimulates the abdominal organs, diaphragm, and heart.  Reduces flat feet.  Energizes the entire body.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483078/yoga-api/9_ewvoun.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483078/yoga-api/9_ewvoun.png",
-          "url_svg_alt": "https://www.dropbox.com/s/9emlawz8vayk8bm/chair.svg?raw=1"
       }
   ]
 }

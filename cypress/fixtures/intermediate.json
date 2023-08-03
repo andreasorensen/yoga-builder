@@ -3,7 +3,7 @@
   "difficulty_level": "Intermediate",
   "poses": [
       {
-          "id": 6,
+          "id": 4,
           "difficulty_level": "Intermediate",
           "english_name": "Boat",
           "sanskrit_name_adapted": "Navasana",
@@ -16,7 +16,7 @@
           "url_svg_alt": "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1"
       },
       {
-          "id": 7,
+          "id": 5,
           "difficulty_level": "Intermediate",
           "english_name": "Bow",
           "sanskrit_name_adapted": "Dhanurasana",
@@ -29,7 +29,7 @@
           "url_svg_alt": "https://www.dropbox.com/s/wizj5kwxvez4c0a/bow.svg?raw=1"
       },
       {
-          "id": 8,
+          "id": 6,
           "difficulty_level": "Intermediate",
           "english_name": "Camel",
           "sanskrit_name_adapted": "Ustrasana",
@@ -40,32 +40,6 @@
           "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/6_ri1w0e.svg",
           "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/6_ri1w0e.png",
           "url_svg_alt": "https://www.dropbox.com/s/o5gr4lngltsdg5r/camel.svg?raw=1"
-      },
-      {
-          "id": 9,
-          "difficulty_level": "Intermediate",
-          "english_name": "Crescent Lunge",
-          "sanskrit_name_adapted": "Alanasana",
-          "sanskrit_name": "Ashta Chandrāsana",
-          "translation_name": "ashta = side, chandra = moon, āsana = posture",
-          "pose_description": "From mountain pose, on the inhalation bring the hands up and interlace the fingers together. Exhale, bend to one side, lengthening the opposite of the rib cage and stretch.",
-          "pose_benefits": "Stretches the rib cage, arms and torso.  Tones the oblique muscles.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483080/yoga-api/12_pv4p1z.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483080/yoga-api/12_pv4p1z.png",
-          "url_svg_alt": "https://www.dropbox.com/s/1oc1dqv8mfwo8uj/highlunge.svg?raw=1"
-      },
-      {
-          "id": 10,
-          "difficulty_level": "Intermediate",
-          "english_name": "Crow",
-          "sanskrit_name_adapted": "Bakasana",
-          "sanskrit_name": "Bakāsana",
-          "translation_name": "baka = crane, āsana = posture",
-          "pose_description": "From an inverted position, with the hips up and the head down, the arms are bent in a 90-degree angle with the knees resting on the elbows.  The palms are firmly rooted into the earth with knuckles pressed firmly into the earth for support.  The belly is pulled up and in towards the spine with the ribcage and chin lifted.  The weight of the body shifts slightly forward as the toes lift up and off the earth into the full expression of the pose.  The gaze is down and slightly forward.",
-          "pose_benefits": "Strengthens arms and wrists.  Stretches the upper back.  Strengthens the abdominal muscles.  Opens the groin.  Tones the abdominal organs.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483083/yoga-api/13_hdjxuz.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483083/yoga-api/13_hdjxuz.png",
-          "url_svg_alt": "https://www.dropbox.com/s/ukaxoioh0uooswj/crow.svg?raw=1"
       }
   ]
 }
