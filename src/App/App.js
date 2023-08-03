@@ -56,7 +56,7 @@ const App = () => {
       ) : (
         <Routes>
           <Route
-            path="/home"
+            path="/"
             element={
               <Homepage
                 selectedLevel={selectedLevel}
@@ -85,7 +85,5 @@ const App = () => {
     </>
   );
 };
-
-// need to add error page route
 
 export default App;
