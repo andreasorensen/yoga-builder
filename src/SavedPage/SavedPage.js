@@ -17,11 +17,13 @@ const SavedPage = ({ favoritedPoses, handleToggleFavorite }) => {
 
   return (
     <div className="saved-poses-container">
-      <h2>Your Favorited Poses</h2>
       {favoritedPoses.length === 0 ? (
-        <p>You have no favorited poses.</p>
+        <h3 className='no-saved-msg'>You currently have no saved asanas.</h3>
       ) : (
-        renderSavedPoses()
+        <>
+        <h3 className='fav-asana-heading'>Here are your favorite asanas!</h3>
+        {renderSavedPoses()}
+        </>
       )}
     </div>
   );
