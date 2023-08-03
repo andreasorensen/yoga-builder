@@ -22,7 +22,9 @@ const SavedPage = ({ favoritedPoses, handleToggleFavorite }) => {
       ) : (
         <>
         <h3 className='fav-asana-heading'>Here are your favorite asanas!</h3>
+        <div className="asana-card-container">
         {renderSavedPoses()}
+        </div>
         </>
       )}
     </div>
