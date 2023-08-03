@@ -3,11 +3,7 @@ import FavButton from "../FavButton/FavButton";
 import PropTypes from "prop-types";
 
 const AsanaCard = ({ pose, handleToggleFavorite, favoritedPoses }) => {
-  console.log("favoritedPoses***:", favoritedPoses);
   const isFavorited = favoritedPoses.some((favPose) => favPose.id === pose.id);
-
-  console.log("isFavorited", isFavorited);
-  console.log("pose:", pose);
 
   return (
     <div className="asana-card">

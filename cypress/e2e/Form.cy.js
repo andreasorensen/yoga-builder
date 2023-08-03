@@ -14,7 +14,6 @@ describe("FilterForm interactions", () => {
     }).as("getExpertPoses");
 
     cy.visit("http://localhost:3000/");
-
     cy.wait("@getBeginnerPoses");
 
     cy.get(".drop-down").should("have.value", "beginner");

@@ -1,10 +1,8 @@
 Cypress.Commands.add('assertAsanas', (fixture) => {
   cy.fixture(fixture).then((data) => {
-    console.log(data);
     const poses = data.poses;
     poses.forEach((pose, index) => {
       cy.get(`.asana-card:nth-child(${index + 1})`).within(($card) => {
-        console.log($card.text());
         cy.contains('.name', pose.english_name);
         cy.contains('.sanskrit-name', pose.sanskrit_name);
         cy.get('.asana-image').should('have.attr', 'src', pose.url_svg);
