@@ -1,5 +1,32 @@
+.form {
+  margin-bottom: 15px;
+}
+
 .form-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.curr-level {
+  margin-bottom: 20px;
+}
+
+.drop-down, .submit-btn {
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 3px 2px 3px 3px;
+  border: 2px solid black;
+}
+
+.submit-btn {
+  background-color: white;
+  padding: 3.5px 7px 3.5px 7px;
+}
+
+.drop-down:hover, .submit-btn:hover {
+  cursor: pointer;
+  background-color: pink;
 }
