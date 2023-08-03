@@ -3,7 +3,7 @@
   "difficulty_level": "Expert",
   "poses": [
       {
-          "id": 14,
+          "id": 11,
           "difficulty_level": "Expert",
           "english_name": "Dolphin",
           "sanskrit_name_adapted": "Ardha Pincha Mayurasana",
@@ -16,7 +16,7 @@
           "url_svg_alt": "https://www.dropbox.com/s/px1foombb3v24se/dolphin.svg?raw=1"
       },
       {
-          "id": 17,
+          "id": 12,
           "difficulty_level": "Expert",
           "english_name": "Extended Hand to Toe",
           "sanskrit_name_adapted": "Utthita Hasta Padangusthasana",
@@ -29,7 +29,7 @@
           "url_svg_alt": "https://www.dropbox.com/s/0yk0z7f0a4ni37l/extendedhandtotoe.svg?raw=1"
       },
       {
-          "id": 19,
+          "id": 13,
           "difficulty_level": "Expert",
           "english_name": "Forearm Stand",
           "sanskrit_name_adapted": "Pincha Mayurasana",
@@ -42,7 +42,7 @@
           "url_svg_alt": "https://www.dropbox.com/s/kjlyju4m91qgoi6/forearmstand.svg?raw=1"
       },
       {
-          "id": 21,
+          "id": 14,
           "difficulty_level": "Expert",
           "english_name": "Half-Moon",
           "sanskrit_name_adapted": "Ardha Chandrasana",
@@ -55,7 +55,7 @@
           "url_svg_alt": "https://www.dropbox.com/s/gpumf9eehr8wo9g/halfmoon.svg?raw=1"
       },
       {
-          "id": 22,
+          "id": 15,
           "difficulty_level": "Expert",
           "english_name": "Handstand",
           "sanskrit_name_adapted": "Adho Mukha Vrksasana",
@@ -66,84 +66,6 @@
           "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483085/yoga-api/22_ojzmr8.svg",
           "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483085/yoga-api/22_ojzmr8.png",
           "url_svg_alt": "https://www.dropbox.com/s/p7pf5j0untktn9c/handstand.svg?raw=1"
-      },
-      {
-          "id": 32,
-          "difficulty_level": "Expert",
-          "english_name": "Half Lord of the Fishes",
-          "sanskrit_name_adapted": "Ardha Matsyendrasana",
-          "sanskrit_name": "Ardhā Matsyendrāsana",
-          "translation_name": "ardha = half, matsya = fish, indra = king",
-          "pose_description": "Begin in a seated position. Bend one knee so the sole of your foot is close to the opposite inner thigh. Bend your opposite knee in, foot on the floor, heel to the outside of your bent thigh. Extend your arm (same side of your Lotus leg) high into the sky and begin to twist it to the outside of your bent knee. Use your opposite hand as leverage to twist deeper. Hook your elbow to the outside of your thigh and gaze over your back shoulder. If you want to extend your twist deeper, wrap your arm around the shin of your bent knee and sweep your opposite arm around to meet it. Catch opposite fingertips or the wrist. Keep a long spine.",
-          "pose_benefits": "Stretches the shoulders, the chest, the thighs, the groins, and the abdomen.  Strengthens the legs and the ankles.  Improves balance.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483091/yoga-api/32_hafoa0.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483091/yoga-api/32_hafoa0.png",
-          "url_svg_alt": "https://www.dropbox.com/s/u9joi8lbntxumyh/seatedspinaltwist.svg?raw=1"
-      },
-      {
-          "id": 36,
-          "difficulty_level": "Expert",
-          "english_name": "Splits",
-          "sanskrit_name_adapted": "Hanumanasana",
-          "sanskrit_name": "Hanumānāsana",
-          "translation_name": "hanumān = monkey deity, āsana = posture",
-          "pose_description": "The hips are parallel and squared to the earth with one leg extended forward.  The opposite leg extended back with the knee and foot squared to the earth.  The inner thighs scissor towards each other.  The hands are by the side body or at the heart center in Anjali Mudra (Salutation Seal) or stretched straight up toward the sky.  The ribcage is lifted.  The heart is open.  The gaze is forward.",
-          "pose_benefits": "Stretches the thighs, hamstrings, and groin.  Stimulates the abdominal organs.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483092/yoga-api/36_a2z20a.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483092/yoga-api/36_a2z20a.png",
-          "url_svg_alt": "https://www.dropbox.com/s/u8dxhc41hjfcxj6/splits.svg?raw=1"
-      },
-      {
-          "id": 40,
-          "difficulty_level": "Expert",
-          "english_name": "Side Splits",
-          "sanskrit_name_adapted": "Upavistha Konasana",
-          "sanskrit_name": "Upaviṣṭha Koṇāsana",
-          "translation_name": "upaviṣṭha = seated, koṇa = angle, āsana = posture",
-          "pose_description": "From a wide stance the legs are open and extended sideways to your degree of flexibility.  The outer edges of the feet are rotated and gripping toward the earth.  The weight of the body is supported by the arms.  The palms are rooted into the earth with the fingers pointing towards the body.  There should be no excess weight on the knee or ankle joints as you lower down to your degree of flexibility. The gaze is down and slightly forward.",
-          "pose_benefits": "Stretches the insides and backs of the legs.  Stimulates the abdominal organs.  Strengthens the spine.  Calms the brain.  Releases groin.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483093/yoga-api/40_dkmow6.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483093/yoga-api/40_dkmow6.png",
-          "url_svg_alt": "https://www.dropbox.com/s/6z51vzosovhx5w7/straddlesplit.svg?raw=1"
-      },
-      {
-          "id": 46,
-          "difficulty_level": "Expert",
-          "english_name": "Warrior Three",
-          "sanskrit_name_adapted": "Virabhadrasana Three",
-          "sanskrit_name": "Vīrabhadrāsana III",
-          "translation_name": "vīrabhadra = warrior, āsana = posture",
-          "pose_description": "From a standing position, one leg is rooted and perpendicular to the earth while the other leg is raised, extended back and parallel to the earth.  The head of the thighbone of the standing leg presses back towards the heel and is actively rooted into the earth.  The arms and the extended leg lengthen in opposing directions with Bandhas engaged.  The hips are squared and the tailbone presses firmly into the pelvis.  The arms, torso, and extended raised leg should be positioned relatively parallel to the floor.  The gaze is forward or down.",
-          "pose_benefits": "Strengthens the ankles and legs.  Strengthens the shoulders and muscles of the back.  Tones the abdomen.  Improves balance and posture.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483097/yoga-api/46_lz6v7i.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483097/yoga-api/46_lz6v7i.png",
-          "url_svg_alt": "https://www.dropbox.com/s/lwgoky3z37ameif/warrior3.svg?raw=1"
-      },
-      {
-          "id": 47,
-          "difficulty_level": "Expert",
-          "english_name": "Wheel",
-          "sanskrit_name_adapted": "Urdhva Dhanurasana",
-          "sanskrit_name": "Ūrdhva Dhanurāsana",
-          "translation_name": "ūrdhva = upward, dhanu = bow, āsana = posture",
-          "pose_description": "Pressed up from a supine position, lying on your back, the palms are rooted into the earth with the fingers pointed towards the heels.  The feet are grounded.  The hips are pressed up.  The thighs are rotated inward.  The thoracic spine is arched creating a strong crescent arch along the spinal column.  The gaze is forward.",
-          "pose_benefits": "Strengthens the arms, wrists, legs, buttocks, abs, and spine.  Stimulates the thyroid and pituitary.  Increases energy and counteracts depression.  Therapeutic for asthma, back pain, infertility, and osteoporosis.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483097/yoga-api/47_w2jsof.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483097/yoga-api/47_w2jsof.png",
-          "url_svg_alt": "https://www.dropbox.com/s/kpa1bewuut3lm5q/wheel.svg?raw=1"
-      },
-      {
-          "id": 48,
-          "difficulty_level": "Expert",
-          "english_name": "Wild Thing",
-          "sanskrit_name_adapted": "Camatkarasana",
-          "sanskrit_name": "Camatkārāsana",
-          "translation_name": "camatkāra = struck with wonder, āsana = posture",
-          "pose_description": "From downward dog pose, elevate one leg toward the sky and stack the corresponding hip over the other hip.  Bring the upper heel as close to the buttocks as possible.  The hips remain stacked; then bring the shoulders forward slowly over the hands.  Replace the corresponding hand to the upraised leg with the other hand and flip yourself over and extend the top hand forward.  The bottom foot is now facing toward the front of the mat and you remain on the ball of the top foot and the corresponding knee is bent.  Continue to lift hips up towards the sky and continue reaching the free hand towards the front of the room and slightly downwards.  Allow the head to curl back.",
-          "pose_benefits": "Stretches the chest, shoulders, back, and throat.  Strengthens and opens the hips, hip flexors, and thighs.",
-          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483097/yoga-api/48_unoav6.svg",
-          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483097/yoga-api/48_unoav6.png",
-          "url_svg_alt": "https://www.dropbox.com/s/d1dbdvo4l7xry4w/downdogflip.svg?raw=1"
       }
   ]
 }
