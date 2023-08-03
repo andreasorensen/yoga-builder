@@ -1,4 +1,4 @@
-// this should have the Form component rendered as well as the Asana cards
+
 import './Homepage.css'
 import FilterForm from "../FilterForm/FilterForm";
 import AsanaCard from "../AsanaCard/AsanaCard";
@@ -16,7 +16,6 @@ const Homepage = ({
 }) => {
 
   const [errorMessage, setErrorMessage] = useState(null);
-
   
   const handleSubmit = (event) => {
     event.preventDefault();
