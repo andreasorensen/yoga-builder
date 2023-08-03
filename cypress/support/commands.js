@@ -12,3 +12,10 @@ Cypress.Commands.add('assertAsanas', (fixture) => {
     });
   });
 });
+
+Cypress.Commands.add('saveAsanas', () => {
+  return cy.get(".fave-icon").first()
+    .click()
+    .get(".saved-asanas-btn")
+    .click()
+});
