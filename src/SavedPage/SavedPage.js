@@ -1,6 +1,7 @@
 import React from "react";
 import AsanaCard from "../AsanaCard/AsanaCard";
 import "./SavedPage.css";
+import PropTypes from 'prop-types'
 
 const SavedPage = ({ favoritedPoses, handleToggleFavorite }) => {
   const renderSavedPoses = () => {
@@ -29,6 +30,20 @@ const SavedPage = ({ favoritedPoses, handleToggleFavorite }) => {
       )}
     </div>
   );
+};
+
+SavedPage.propTypes = {
+  favoritedPoses: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      english_name: PropTypes.string.isRequired,
+      sanskrit_name: PropTypes.string.isRequired,
+      url_svg: PropTypes.string.isRequired,
+      pose_description: PropTypes.string,
+      pose_benefits: PropTypes.string,
+    })
+  ).isRequired,
+  handleToggleFavorite: PropTypes.func.isRequired,
 };
 
 export default SavedPage;
