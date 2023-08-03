@@ -33,7 +33,8 @@ const Homepage = ({
         handleLevelChange={handleLevelChange}
         onSubmit={handleSubmit}
       />
-      {isLoading ? <p>Loading...</p> :showAsanaCards && (
+        {isLoading && <p>Loading...</p>}
+        {!isLoading && showAsanaCards && (
         <>
           <h2 className="asana-level-msg">Here are some {selectedLevel} level asanas:</h2>
           <div className="asana-card-container">{renderAsanaCard()}</div>
