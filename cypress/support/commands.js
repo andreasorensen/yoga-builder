@@ -1,13 +1,16 @@
-Cypress.Commands.add('setupIntercepts', () => {
-  cy.intercept('GET', 'https://yoga-api-nzy4.onrender.com/v1/poses?level=beginner', {
-    fixture: 'beginner.json'
-  }).as('getBeginnerPoses');
-
-  cy.intercept('GET', 'https://yoga-api-nzy4.onrender.com/v1/poses?level=intermediate', {
-    fixture: 'intermediate.json'
-  }).as('getIntermediatePoses');
-
-  cy.intercept('GET', 'https://yoga-api-nzy4.onrender.com/v1/poses?level=expert', {
-    fixture: 'expert.json'
-  }).as('getExpertPoses');
+Cypress.Commands.add('assertAsanas', (fixture) => {
+  cy.fixture(fixture).then((data) => {
+    console.log(data);
+    const poses = data.poses;
+    poses.forEach((pose, index) => {
+      cy.get(`.asana-card:nth-child(${index + 1})`).within(($card) => {
+        console.log($card.text());
+        cy.contains('.name', pose.english_name);
+        cy.contains('.sanskrit-name', pose.sanskrit_name);
+        cy.get('.asana-image').should('have.attr', 'src', pose.url_svg);
+        cy.get('.description').should('contain', `Description: ${pose.pose_description}`);
+        cy.get('.benefits').should('contain', `Benefits: ${pose.pose_benefits}`);
+      });
+    });
+  });
 });
