@@ -1,9 +1,8 @@
 describe("FilterForm interactions", () => {
 
   it("Changing the level updates the selectedLevel state", () => {
-    cy.intercept("GET", "https://yoga-api-nzy4.onrender.com/v1/poses?level=beginner", {
-      fixture: "beginner.json",
-    }).as("getBeginnerPoses"),
+    
+    cy.visit("http://localhost:3000/");
 
     cy.intercept("GET", "https://yoga-api-nzy4.onrender.com/v1/poses?level=intermediate", {
       fixture: "intermediate.json",
@@ -13,10 +12,7 @@ describe("FilterForm interactions", () => {
       fixture: "expert.json",
     }).as("getExpertPoses");
 
-    cy.visit("http://localhost:3000/");
-    cy.wait("@getBeginnerPoses");
-
-    cy.get(".drop-down").should("have.value", "beginner");
+    cy.get(".drop-down").should("have.value", null)
 
     cy.get(".drop-down").select("Intermediate").should("have.value", "intermediate");
 
@@ -29,13 +25,14 @@ describe("FilterForm interactions", () => {
     cy.intercept('GET', 'https://yoga-api-nzy4.onrender.com/v1/poses?level=beginner', {
       fixture: 'beginner.json'
     }).as('getBeginnerPoses');
-  
+
     cy.visit('http://localhost:3000/');
-  
-    cy.wait('@getBeginnerPoses');
-  
-    cy.get('.drop-down').select('Beginner');
+
+    cy.get('.drop-down').select('Beginner')
+
     cy.get('.submit-btn').click();
+
+    cy.wait('@getBeginnerPoses')
   
     cy.assertAsanas('beginner.json');
   });

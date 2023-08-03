@@ -8,6 +8,7 @@ const FilterForm = ({ selectedLevel, handleLevelChange, onSubmit }) => {
       <h3 className='curr-level'>Begin exploring asanas by selecting your current experience level below.</h3>
       <label>
         <select className='drop-down' value={selectedLevel} onChange={handleLevelChange}>
+          <option value="" disabled selected>Select your level</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="expert">Expert</option>

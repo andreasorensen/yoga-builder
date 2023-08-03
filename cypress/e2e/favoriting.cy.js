@@ -1,15 +1,13 @@
 describe('Favoriting functionality', () => {
-  beforeEach(() => {
+
+  it('toggles the favorite icon when clicked & exists on the SavedPage', () => {
+
     cy.intercept('GET', 'https://yoga-api-nzy4.onrender.com/v1/poses?level=beginner', {
       fixture: 'beginner.json' 
     }).as('getBeginnerPoses');
 
     cy.visit('http://localhost:3000/')
     cy.wait('@getBeginnerPoses')
-
-  });
-
-  it('toggles the favorite icon when clicked & exists on the SavedPage', () => {
 
     cy.get('.drop-down').select('Beginner');
     cy.get('.submit-btn').click();
@@ -28,6 +26,14 @@ describe('Favoriting functionality', () => {
   });
 
   it('shows favorited asana card on the saved page', () => {
+
+    cy.intercept('GET', 'https://yoga-api-nzy4.onrender.com/v1/poses?level=beginner', {
+      fixture: 'beginner.json' 
+    }).as('getBeginnerPoses');
+
+    cy.visit('http://localhost:3000/')
+    cy.wait('@getBeginnerPoses')
+    
     cy.get('.drop-down').select('Beginner');
     cy.get('.submit-btn').click();
 

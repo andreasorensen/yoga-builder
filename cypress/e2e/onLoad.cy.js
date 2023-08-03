@@ -1,8 +1,3 @@
-//  DONE   The "Homepage" component is rendered correctly with all its child components
-//Loading state is displayed while fetching data
-//Poses are rendered correctly when the data is fetched
-//Toggle favorite functionality: The favorited poses state updates correctly
-
 
 describe('homepage', () => {
 
