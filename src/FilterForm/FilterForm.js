@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const FilterForm = ({ selectedLevel, handleLevelChange, onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
@@ -12,6 +14,12 @@ const FilterForm = ({ selectedLevel, handleLevelChange, onSubmit }) => {
       <button type="submit">Submit</button>
     </form>
   );
+};
+
+FilterForm.propTypes = {
+  selectedLevel: PropTypes.string.isRequired,
+  handleLevelChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default FilterForm;
