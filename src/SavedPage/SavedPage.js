@@ -17,7 +17,7 @@ const SavedPage = ({ favoritedPoses, handleToggleFavorite }) => {
 
   return (
     <div className="saved-poses-container">
-      {favoritedPoses.length === 0 ? (
+      {!favoritedPoses.length ? (
         <h3 className='no-saved-msg'>You currently have no saved asanas.</h3>
       ) : (
         <>
