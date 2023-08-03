@@ -2,6 +2,7 @@
 import './Homepage.css'
 import FilterForm from "../FilterForm/FilterForm";
 import AsanaCard from "../AsanaCard/AsanaCard";
+import PropTypes from 'prop-types';
 
 const Homepage = ({
   selectedLevel,
@@ -41,5 +42,38 @@ const Homepage = ({
     </>
   );
 };
+
+Homepage.propTypes = {
+  selectedLevel: PropTypes.string.isRequired,
+  handleLevelChange: PropTypes.func.isRequired,
+  posesData: PropTypes.shape({
+    poses: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number,
+        english_name: PropTypes.string,
+        sanskrit_name: PropTypes.string,
+        url_svg: PropTypes.string,
+        pose_description: PropTypes.string,
+        pose_benefits: PropTypes.string,
+      }),
+    ),
+  }),
+  setShowAsanaCards: PropTypes.func.isRequired,
+  showAsanaCards: PropTypes.bool.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  handleToggleFavorite: PropTypes.func.isRequired,
+  favoritedPoses: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      english_name: PropTypes.string,
+      sanskrit_name: PropTypes.string,
+      url_svg: PropTypes.string,
+      pose_description: PropTypes.string,
+      pose_benefits: PropTypes.string,
+    }),
+  ).isRequired,
+};
+
+
 
 export default Homepage;

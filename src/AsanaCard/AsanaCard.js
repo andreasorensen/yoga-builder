@@ -1,13 +1,13 @@
-
 import "./AsanaCard.css";
 import FavButton from "../FavButton/FavButton";
+import PropTypes from "prop-types";
 
 const AsanaCard = ({ pose, handleToggleFavorite, favoritedPoses }) => {
-  console.log('favoritedPoses***:', favoritedPoses)
+  console.log("favoritedPoses***:", favoritedPoses);
   const isFavorited = favoritedPoses.some((favPose) => favPose.id === pose.id);
 
-  console.log('isFavorited', isFavorited)
-  console.log('pose:', pose)
+  console.log("isFavorited", isFavorited);
+  console.log("pose:", pose);
 
   return (
     <div className="asana-card">
@@ -29,6 +29,28 @@ const AsanaCard = ({ pose, handleToggleFavorite, favoritedPoses }) => {
       <p className="benefits">Benefits: {pose.pose_benefits}</p>
     </div>
   );
+};
+
+AsanaCard.propTypes = {
+  pose: PropTypes.shape({
+    id: PropTypes.number,
+    english_name: PropTypes.string,
+    sanskrit_name: PropTypes.string,
+    url_svg: PropTypes.string,
+    pose_description: PropTypes.string,
+    pose_benefits: PropTypes.string,
+  }).isRequired,
+  handleToggleFavorite: PropTypes.func.isRequired,
+  favoritedPoses: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      english_name: PropTypes.string,
+      sanskrit_name: PropTypes.string,
+      url_svg: PropTypes.string,
+      pose_description: PropTypes.string,
+      pose_benefits: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default AsanaCard;

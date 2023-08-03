@@ -7,6 +7,7 @@ import NavBar from "../NavBar/NavBar";
 import SavedPage from "../SavedPage/SavedPage";
 import NotFoundPage from "../NotFound/NotFoundPage";
 
+
 const App = () => {
   const [selectedLevel, setSelectedLevel] = useState("beginner");
   const [posesData, setPosesData] = useState(null);
