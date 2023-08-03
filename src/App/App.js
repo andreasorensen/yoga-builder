@@ -23,8 +23,7 @@ const App = () => {
       setPosesData(data);
       setError(null);
     } catch (error) {
-      console.error("Error fetching data:", error);
-      setError("Error fetching data. Please try again later.");
+      setError(error.message);
     }
     setIsLoading(false);
   };
