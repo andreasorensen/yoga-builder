@@ -1,0 +1,45 @@
+{
+  "id": 3,
+  "difficulty_level": "Expert",
+  "poses": [
+      {
+          "id": 7,
+          "difficulty_level": "Expert",
+          "english_name": "Dolphin",
+          "sanskrit_name_adapted": "Ardha Pincha Mayurasana",
+          "sanskrit_name": "Pīñcha Mayūrāsana",
+          "translation_name": "pīñcha = feather, mayūra = peacock, āsana = posture",
+          "pose_description": "From Downward-Facing Dog, the forearms are planted onto the earth with the elbows narrow and the palms down in a Sphinx position. The pelvis is tucked. The ribcage lifted. The feet are rooted and the legs are straight with the tailbone in dog tilt. The gaze is down and slightly forward.",
+          "pose_benefits": "Calms the brain and helps relieve stress and mild depression. Energizes the body. Stretches the shoulders, hamstrings, calves, arches, and hands. Strengthens the arms and legs. Helps relieve the symptoms of menopause. Relieves menstrual discomfort when done with the head supported. Helps prevent osteoporosis. Improves digestion. Relieves headache, insomnia, back pain, and fatigue. Therapeutic for high blood pressure, asthma, flat feet, sciatica, and sinusitis. Warms up the ankles and the toes.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483080/yoga-api/14_k9lr9a.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483080/yoga-api/14_k9lr9a.png",
+          "url_svg_alt": "https://www.dropbox.com/s/px1foombb3v24se/dolphin.svg?raw=1"
+      },
+      {
+          "id": 8,
+          "difficulty_level": "Expert",
+          "english_name": "Extended Hand to Toe",
+          "sanskrit_name_adapted": "Utthita Hasta Padangusthasana",
+          "sanskrit_name": "Utthita Hasta Pādāṅguṣṭhāsana",
+          "translation_name": "utthita = extended, hasta = hand, pādāṅguṣṭha = big toe, āsana = posture",
+          "pose_description": "From mountain.html pose, lift one foot.  Bend forward and catch the toes with the fingers.  Place the other hand on the hip to square the hip towards the front.  Slowly straighten the knee and the torso and open the leg to one side.  Use a strap if necessary.  Gaze towards the front or opposite of the extended leg for balance.",
+          "pose_benefits": "Opens the hips and groins.  Stretches the hamstrings, IT bands and legs.  Improves balance.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483084/yoga-api/17_l9joyu.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483084/yoga-api/17_l9joyu.png",
+          "url_svg_alt": "https://www.dropbox.com/s/0yk0z7f0a4ni37l/extendedhandtotoe.svg?raw=1"
+      },
+      {
+          "id": 9,
+          "difficulty_level": "Expert",
+          "english_name": "Forearm Stand",
+          "sanskrit_name_adapted": "Pincha Mayurasana",
+          "sanskrit_name": "Pīñcha Mayūrāsana",
+          "translation_name": "pīñcha = feather, mayūra = peacock, āsana = posture",
+          "pose_description": "From an inverted position, with the body perpendicular to the earth, the weight of the body is supported on the forearms that are parallel and pressed firmly into the earth.  The palms are flat.  The knuckles are evenly pressed into the earth.  The fingers are spread wide.  Both legs reach up toward the sky in a straight line with the pelvis tucked.  The ribcage is lifted.  The gaze is forward.",
+          "pose_benefits": "Strengthens arms and shoulders.  Improves focus and balance.  Stretches the upper and lower back.  Strengthens the abdominal muscles.  Tones the abdominal area.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483084/yoga-api/19_jadqwc.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483084/yoga-api/19_jadqwc.png",
+          "url_svg_alt": "https://www.dropbox.com/s/kjlyju4m91qgoi6/forearmstand.svg?raw=1"
+      }
+  ]
+}

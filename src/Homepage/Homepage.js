@@ -1,8 +1,9 @@
-// this should have the Form component rendered as well as the Asana cards
+
 import './Homepage.css'
 import FilterForm from "../FilterForm/FilterForm";
 import AsanaCard from "../AsanaCard/AsanaCard";
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const Homepage = ({
   selectedLevel,
@@ -10,15 +11,22 @@ const Homepage = ({
   posesData,
   setShowAsanaCards,
   showAsanaCards,
-  isLoading,
   handleToggleFavorite,
   favoritedPoses
 }) => {
+
+  const [errorMessage, setErrorMessage] = useState(null);
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    setShowAsanaCards(true);
+    if (selectedLevel === "") {
+      setErrorMessage("Please select a level before submitting.");
+    } else {
+      setShowAsanaCards(true);
+      setErrorMessage(null);
+    }
   };
+  
 
   const renderAsanaCard = () => {
     return posesData.poses.map((pose) => (
@@ -28,12 +36,13 @@ const Homepage = ({
 
   return (
     <>
-      <FilterForm
-        selectedLevel={selectedLevel}
-        handleLevelChange={handleLevelChange}
-        onSubmit={handleSubmit}
-      />
-      {isLoading ? <p>Loading...</p> :showAsanaCards && (
+    <FilterForm
+      selectedLevel={selectedLevel}
+      handleLevelChange={handleLevelChange}
+      onSubmit={handleSubmit}
+    />
+    {errorMessage && <p className="error-message">{errorMessage}</p>}
+        {showAsanaCards && (
         <>
           <h2 className="asana-level-msg">Here are some {selectedLevel} level asanas:</h2>
           <div className="asana-card-container">{renderAsanaCard()}</div>

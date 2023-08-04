@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="nav-container">
-        <NavLink to="/home" className="homepage-btn">
+        <NavLink to="/" className="homepage-btn">
           Home
         </NavLink>
         <img className="logo" src={logo} alt="yogability-logo" />

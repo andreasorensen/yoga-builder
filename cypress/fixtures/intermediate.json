@@ -1,0 +1,45 @@
+{
+  "id": 2,
+  "difficulty_level": "Intermediate",
+  "poses": [
+      {
+          "id": 4,
+          "difficulty_level": "Intermediate",
+          "english_name": "Boat",
+          "sanskrit_name_adapted": "Navasana",
+          "sanskrit_name": "Nāvāsana",
+          "translation_name": "nāva = boat, āsana = posture",
+          "pose_description": "From a seated position the feet are lifted up so that the thighs are angled about 45-50 degrees relative to the earth.  The tailbone is lengthened into the earth and the pubis pulls toward the navel.  The shoulder blades are spread across the back and the hands reach around the back of the calves, with legs pulled towards the body.  The chin is tipped slightly toward the sternum so that the base of the skull lifts lightly away from the back of the neck.  Gaze is forward.",
+          "pose_benefits": "Strengthens the abdomen, hip flexors, and spine.  Stimulates the kidneys, thyroid and prostate glands, and intestines.  Helps relieve stress.  Improves digestion.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483071/yoga-api/1_txmirf.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483071/yoga-api/1_txmirf.png",
+          "url_svg_alt": "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1"
+      },
+      {
+          "id": 5,
+          "difficulty_level": "Intermediate",
+          "english_name": "Bow",
+          "sanskrit_name_adapted": "Dhanurasana",
+          "sanskrit_name": "Dhanurāsana",
+          "translation_name": "dhanur = bow, āsana = posture",
+          "pose_description": "From a prone position with the abdomen on the earth, the hands grip the ankles (but not the tops of the feet) with knees no wider than the width of your hips.  The heels are lifted away from the buttocks and at the same time the thighs are lifted away from the earth working opposing forces as the heart center, hips and back open.  The gaze is forward.",
+          "pose_benefits": "Stretches the entire front of the body, ankles, thighs and groins, abdomen and chest, and throat, and deep hip flexors (psoas).  Strengthens the back muscles.  Improves posture.  Stimulates the organs of the abdomen and neck.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483072/yoga-api/3_aa0fgk.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483072/yoga-api/3_aa0fgk.png",
+          "url_svg_alt": "https://www.dropbox.com/s/wizj5kwxvez4c0a/bow.svg?raw=1"
+      },
+      {
+          "id": 6,
+          "difficulty_level": "Intermediate",
+          "english_name": "Camel",
+          "sanskrit_name_adapted": "Ustrasana",
+          "sanskrit_name": "Uṣṭrāsana",
+          "translation_name": "uṣṭra = camel, āsana = posture",
+          "pose_description": "From a kneeling position the knees are hip width apart and the thighs are perpendicular to the earth.  The inner thighs are narrowed and rotated slightly inward with the buttocks engaged but not hardened.  The tailbone is tucked under but the hips do not puff forward.  The shins and tops of the feet are pressed firmly into the earth.  The ribcage is open, along with the heart center, but the lower front ribs do not protrude sharply towards the sky.  The lower back lifts the ribs away from the pelvis to keep the lower spine as long as possible.  The base of the palms are pressed firmly against the soles (or heels) of the feet and the fingers are pointed toward the toes.  The arms are extended straight and are turned slightly outward at the shoulder joint so the elbow creases face forward without squeezing the shoulder blades together.  The neck is in a relatively neutral position, neither flexed nor extended, or (for the advanced practitioners only) the head drops back.  Be careful not to strain your neck and harden your throat.  The gaze is either towards the sky or towards the earth, depending upon your flexibility.",
+          "pose_benefits": "Stretches the entire front of the body, the ankles, thighs and groins, abdomen and chest, and throat.  Stretches the deep hip flexors (psoas).  Strengthens back muscles.  Improves posture.  Stimulates the organs of the abdomen and neck.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/6_ri1w0e.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/6_ri1w0e.png",
+          "url_svg_alt": "https://www.dropbox.com/s/o5gr4lngltsdg5r/camel.svg?raw=1"
+      }
+  ]
+}

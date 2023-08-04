@@ -9,7 +9,7 @@ import NotFoundPage from "../NotFound/NotFoundPage";
 
 
 const App = () => {
-  const [selectedLevel, setSelectedLevel] = useState("beginner");
+  const [selectedLevel, setSelectedLevel] = useState("");
   const [posesData, setPosesData] = useState(null);
   const [error, setError] = useState(null);
   const [showAsanaCards, setShowAsanaCards] = useState(false);
@@ -30,7 +30,9 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchData(selectedLevel);
+    if (selectedLevel !== "") {
+      fetchData(selectedLevel);
+    }
   }, [selectedLevel]);
 
   const handleLevelChange = (event) => {
@@ -47,7 +49,6 @@ const App = () => {
     }
   };
   
-
   return (
     <>
       <NavBar />
@@ -56,7 +57,7 @@ const App = () => {
       ) : (
         <Routes>
           <Route
-            path="/home"
+            path="/"
             element={
               <Homepage
                 selectedLevel={selectedLevel}
@@ -67,6 +68,7 @@ const App = () => {
                 isLoading={isLoading}
                 handleToggleFavorite={handleToggleFavorite}
                 favoritedPoses={favoritedPoses}
+                setSelectedLevel={setSelectedLevel}
               />
             }
           />
@@ -85,7 +87,5 @@ const App = () => {
     </>
   );
 };
-
-// need to add error page route
 
 export default App;

@@ -1,0 +1,45 @@
+{
+  "id": 1,
+  "difficulty_level": "Beginner",
+  "poses": [
+      {
+          "id": 1,
+          "difficulty_level": "Beginner",
+          "english_name": "Half Boat",
+          "sanskrit_name_adapted": "Ardha Navasana",
+          "sanskrit_name": "Ardha Nāvāsana",
+          "translation_name": "ardha = half, nāva = boat, āsana = posture",
+          "pose_description": "From a seated position the hands are gripped around the back of the legs and the knees are bent in a 90 degree angle.  Both legs are pulled in towards the abdomen.  The core is engaged to maintain balance on the sits bones (be sure that the back does not round).  The front of the torso lengthens between the pubis and top of the sternum as the spine extends in both directions reaching up to the sky and rooting down to the earth.  The gaze is forward and Bandhas are engaged.",
+          "pose_benefits": "Strengthens the abdomen, hip flexors and spine.  Stimulates the kidneys, thyroid, prostate glands and intestines.  Helps relieve stress.  Improves digestion.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483073/yoga-api/2_ozh7sv.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483073/yoga-api/2_ozh7sv.png",
+          "url_svg_alt": "https://www.dropbox.com/s/1nx0r94msxjwvyp/boatbentlegs.svg?raw=1"
+      },
+      {
+          "id": 2,
+          "difficulty_level": "Beginner",
+          "english_name": "Butterfly",
+          "sanskrit_name_adapted": "Baddha Konasana",
+          "sanskrit_name": "Baddha Koṇāsana",
+          "translation_name": "baddha = bound, koṇa = angle, āsana = posture",
+          "pose_description": "In sitting position, bend both knees and drop the knees to each side, opening the hips.  Bring the soles of the feet together and bring the heels as close to the groin as possible, keeping the knees close to the ground.  The hands may reach down and grasp and maneuver the feet so that the soles are facing upwards and the heels and little toes are connected.  The shoulders should be pulled back and no rounding of the spine.",
+          "pose_benefits": "Opens the hips and groins.  Stretches the shoulders, rib cage and back.  Stimulates the abdominal organs, lungs and heart.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483074/yoga-api/5_i64gif.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483074/yoga-api/5_i64gif.png",
+          "url_svg_alt": "https://www.dropbox.com/s/3h2pts6xbn28dh7/butterfly%3F.svg?raw=1"
+      },
+      {
+          "id": 3,
+          "difficulty_level": "Beginner",
+          "english_name": "Cat",
+          "sanskrit_name_adapted": "Marjaryasana",
+          "sanskrit_name": "Marjaryāsana",
+          "translation_name": "marjarya = cat, āsana = posture",
+          "pose_description": "From box neutral shift some weight to the palms.  The wrists, elbows and shoulders are in one line.  The abdomen is pulled in and up with the spine arched in a strong Cobra spine.  The crown of the head is towards the earth and the neck is relaxed.  The gaze is between the arms towards the belly.",
+          "pose_benefits": "Relieves the spine and neck. Energizes the body.",
+          "url_svg": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/7_a6aspg.svg",
+          "url_png": "https://res.cloudinary.com/dko1be2jy/image/upload/fl_sanitize/v1676483075/yoga-api/7_a6aspg.png",
+          "url_svg_alt": "https://www.dropbox.com/s/cginnz98of2jpgr/cat.svg?raw=1"
+      }
+  ]
+}
