@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Homepage from "../Homepage/Homepage";

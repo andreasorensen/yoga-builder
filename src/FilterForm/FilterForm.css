@@ -30,3 +30,15 @@
   cursor: pointer;
   background-color: pink;
 }
+
+@media (max-width: 600px) {
+  .header, .form-container {
+    flex-direction: column;
+  }
+
+  /* .header {
+
+  } */
+}
+
+
