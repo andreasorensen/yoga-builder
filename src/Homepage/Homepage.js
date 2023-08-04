@@ -1,9 +1,8 @@
-
-import './Homepage.css'
+import "./Homepage.css";
 import FilterForm from "../FilterForm/FilterForm";
 import AsanaCard from "../AsanaCard/AsanaCard";
-import PropTypes from 'prop-types';
-import { useState } from 'react';
+import PropTypes from "prop-types";
+import { useState } from "react";
 
 const Homepage = ({
   selectedLevel,
@@ -12,11 +11,10 @@ const Homepage = ({
   setShowAsanaCards,
   showAsanaCards,
   handleToggleFavorite,
-  favoritedPoses
+  favoritedPoses,
 }) => {
-
   const [errorMessage, setErrorMessage] = useState(null);
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (selectedLevel === "") {
@@ -26,29 +24,37 @@ const Homepage = ({
       setErrorMessage(null);
     }
   };
-  
 
   const renderAsanaCard = () => {
     if (!posesData || !posesData.poses) {
-      return <p className='loading'>Loading...</p>;
+      return <p className="loading">Loading...</p>;
     }
 
     return posesData.poses.map((pose) => (
-      <AsanaCard key={pose.id} pose={pose} handleToggleFavorite={handleToggleFavorite} favoritedPoses={favoritedPoses}/>
+      <AsanaCard
+        key={pose.id}
+        pose={pose}
+        handleToggleFavorite={handleToggleFavorite}
+        favoritedPoses={favoritedPoses}
+      />
     ));
   };
 
   return (
     <>
-    <FilterForm
-      selectedLevel={selectedLevel}
-      handleLevelChange={handleLevelChange}
-      onSubmit={handleSubmit}
-    />
-    {errorMessage && <p className="error-msg">{errorMessage}</p>}
-        {showAsanaCards && (
+      <FilterForm
+        selectedLevel={selectedLevel}
+        handleLevelChange={handleLevelChange}
+        onSubmit={handleSubmit}
+      />
+      {errorMessage && <p className="error-msg">{errorMessage}</p>}
+      {showAsanaCards && (
         <>
-          <h2 className="asana-level-msg">Here are some {selectedLevel} level asanas:</h2>
+          {selectedLevel !== "" && (
+            <h2 className="asana-level-msg">
+              Here are some {selectedLevel} level asanas:
+            </h2>
+          )}
           <div className="asana-card-container">{renderAsanaCard()}</div>
         </>
       )}
@@ -68,7 +74,7 @@ Homepage.propTypes = {
         url_svg: PropTypes.string,
         pose_description: PropTypes.string,
         pose_benefits: PropTypes.string,
-      }),
+      })
     ),
   }),
   setShowAsanaCards: PropTypes.func.isRequired,
@@ -83,10 +89,8 @@ Homepage.propTypes = {
       url_svg: PropTypes.string,
       pose_description: PropTypes.string,
       pose_benefits: PropTypes.string,
-    }),
+    })
   ).isRequired,
 };
-
-
 
 export default Homepage;
