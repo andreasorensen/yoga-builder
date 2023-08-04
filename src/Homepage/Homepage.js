@@ -45,7 +45,7 @@ const Homepage = ({
       handleLevelChange={handleLevelChange}
       onSubmit={handleSubmit}
     />
-    {errorMessage && <p className="error-message">{errorMessage}</p>}
+    {errorMessage && <p className="error-msg">{errorMessage}</p>}
         {showAsanaCards && (
         <>
           <h2 className="asana-level-msg">Here are some {selectedLevel} level asanas:</h2>

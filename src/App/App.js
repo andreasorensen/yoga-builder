@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Homepage from "../Homepage/Homepage";
@@ -6,6 +5,7 @@ import { getPoses } from "../apiCalls";
 import NavBar from "../NavBar/NavBar";
 import SavedPage from "../SavedPage/SavedPage";
 import NotFoundPage from "../NotFound/NotFoundPage";
+import './App.css'
 
 
 const App = () => {
