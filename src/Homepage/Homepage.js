@@ -29,6 +29,10 @@ const Homepage = ({
   
 
   const renderAsanaCard = () => {
+    if (!posesData || !posesData.poses) {
+      return <p className='loading'>Loading...</p>;
+    }
+
     return posesData.poses.map((pose) => (
       <AsanaCard key={pose.id} pose={pose} handleToggleFavorite={handleToggleFavorite} favoritedPoses={favoritedPoses}/>
     ));
