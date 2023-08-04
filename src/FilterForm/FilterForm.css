@@ -19,6 +19,7 @@
   text-align: center;
   padding: 3px 2px 3px 3px;
   border: 2px solid black;
+  color: black;
 }
 
 .submit-btn {
@@ -34,26 +35,6 @@
 @media (max-width: 600px) {
   .header, .form-container {
     flex-direction: column;
-  }
-
-  .submit-btn {
-    color: black;
-  }
-
-  .drop-down {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-@media (max-width: 900px) {
-  .submit-btn  {
-    color: black;
-  }
-
-  .drop-down {
-    text-decoration: none;
-    color: black;
   }
 }
 
