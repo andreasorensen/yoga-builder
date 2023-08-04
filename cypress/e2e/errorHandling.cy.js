@@ -30,6 +30,8 @@ describe("Error handling", () => {
 
     cy.visit("http://localhost:3000/");
 
+    cy.get('.drop-down').select('beginner');
+
     cy.contains(`I'm sorry, something went wrong. Error: 404`).should(
       "be.visible"
     );
