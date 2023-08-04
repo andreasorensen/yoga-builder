@@ -2,17 +2,16 @@ describe("FilterForm interactions", () => {
   it("Changing the level updates the selectedLevel state", () => {
     cy.visit("http://localhost:3000/");
 
-    cy
-      .intercept(
+    cy.intercept(
         "GET",
         "https://yoga-api-nzy4.onrender.com/v1/poses?level=intermediate",
         {
           fixture: "intermediate.json",
         }
       )
-      .as("getIntermediatePoses"),
-      cy
-        .intercept(
+      .as("getIntermediatePoses")
+
+      cy.intercept(
           "GET",
           "https://yoga-api-nzy4.onrender.com/v1/poses?level=expert",
           {
