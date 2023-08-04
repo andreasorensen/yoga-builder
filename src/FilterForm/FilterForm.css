@@ -35,6 +35,26 @@
   .header, .form-container {
     flex-direction: column;
   }
+
+  .submit-btn {
+    color: black;
+  }
+
+  .drop-down {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media (max-width: 900px) {
+  .submit-btn  {
+    color: black;
+  }
+
+  .drop-down {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 
