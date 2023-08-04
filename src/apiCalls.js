@@ -7,7 +7,7 @@ const getPoses = async (selectedLevel) => {
   }
 
   if (!response.ok && response.status >= 400 && response.status < 500) {
-    throw new Error(`I'm sorry, something went wrong. Error: ${response.status}`)
+    throw new Error(`I'm sorry, something went wrong on your end. Error: ${response.status}`)
   }
 
   return response.json();
