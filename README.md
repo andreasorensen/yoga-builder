@@ -23,7 +23,7 @@ You can find the details outlined [here](https://frontend.turing.edu/projects/mo
 
 ## Preview
 
-![Yogability](https://user-images.githubusercontent.com/125161431/258567038-ea7aeea3-4834-44b6-b97f-48f97695b40b.gif)
+[Yogability](https://user-images.githubusercontent.com/125161431/258567109-1636d413-988a-4eba-9395-d602aa7dad67.mp4)
 
 ## Tech/Frameworks
 
