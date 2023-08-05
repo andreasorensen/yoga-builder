@@ -23,7 +23,7 @@ You can find the details outlined [here](https://frontend.turing.edu/projects/mo
 
 ## Preview
 
-![ezgif com-video-to-gif (6)](https://user-images.githubusercontent.com/125161431/258566581-0454ef95-77e1-418e-8064-bb6c6dee63bd.gif)
+![ezgif com-video-to-gif (7)](https://user-images.githubusercontent.com/125161431/258566950-c067d329-b05e-4829-95cf-1f9107cfb2a6.gif)
 
 
 ## Tech/Frameworks
