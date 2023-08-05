@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Yogability
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Yogability is a React.js app built for Yogi's of all experience levels, which allows them to explore a number of different asanas, based on their current experience level or comfortability. They are given both the English & Sanskrit name, easy to understand instructions for practicing the pose correctly and safely, as well as the health benefits they can expect from incorporating the asana into their yoga practice. Asanas are for everyone, no matter your level, come explore Yogability & find the asanas that will push you forward on your yoga journey!
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+1. Clone down this repo onto your local machine.
+2. `cd` into the project
+3. Run `npm i`
+4. Run `npm start`
+5. Begin your asana exploration!
 
-### `npm start`
+## Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Repo](https://github.com/andreasorensen/yoga-builder.git)
+- [Yogability](https://yogability.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Learning goals
 
-### `npm test`
+The objective of this project was to showcase my understanding of React.js, React Router, E2E Cypress Testing & async JavaScript by developing an app meeting a small MVP, all in in a six day sprint. This app accomplishes these goals, complete with user profiles, user stories, accessibility & responsive design.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can find the details outlined [here](https://frontend.turing.edu/projects/module-3/showcase.html).
 
-### `npm run build`
+## Preview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![ezgif com-video-to-gif (6)](https://user-images.githubusercontent.com/125161431/258566581-0454ef95-77e1-418e-8064-bb6c6dee63bd.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech/Frameworks
 
-### `npm run eject`
+- React.js
+- React Router
+- Cypress E2E
+- CSS
+- Rest API
+- GitHub Projects
+- GitHub
+- Git
+- Canva (wireframe)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Testing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Testing was done using Cypress E2E, in the Electron browser. 
+To run: `cd` into project and `npm run cypress` after following the installation instructions outlined above.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Wins & Challenges
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+All the wins were once challenges. Pushing through the bugs & find workable solutions were a challenge and a win, all the same. Some specific examples are: 
 
-## Learn More
+- Trouble-shooting Cypress tests & refactoring my code to prevent unnecessary fetch calls on load of the app (& unexpected unstubbed requests)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Finding a workaround to my CSS behaving differently on Safari browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Finding an open-source API that allows me to have fun developing an app from the (front-end) ground up was challenging at first, but once I did, it became a big win!
 
-### Code Splitting
+## Extensions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- User authentication 
+- Allow users to create their own sequences
+- Allow users to write comments about the sequences/asanas 
 
-### Analyzing the Bundle Size
+## Contributions/Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Rest API was built by [Alexandre Cumplido Bou](https://github.com/alexcumplido/yoga-api.git)
