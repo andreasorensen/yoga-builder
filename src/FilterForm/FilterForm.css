@@ -27,6 +27,13 @@
   padding: 3.5px 7px 3.5px 7px;
 }
 
+.drop-down, .submit-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  color: black;
+  text-decoration: none;
+}
+
 .drop-down:hover, .submit-btn:hover {
   cursor: pointer;
   background-color: pink;
